@@ -1,13 +1,16 @@
-import React from 'react';
-import './App.css';
-import Counter from "@/components/counter";
+import React from 'react'
+import '@/App.css'
+import Counter from '@/components/counter'
+import { Route, Routes } from 'react-router-dom'
 
-function App() {
+function App () {
   return (
     <div className="App">
-      <Counter />
+      <Routes>
+        <Route path="/counter" element={<Counter/>}/>
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
